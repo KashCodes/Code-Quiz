@@ -3,6 +3,7 @@
   --secondary-color: rgb(207, 99, 240);
   --background-color: rgb(255, 255, 255);
   --accent-color: rgba(161, 159, 159, 0.794);
+  --black-color: rgb(2, 1, 1); 
 }
 
 body {
@@ -24,7 +25,7 @@ header, nav, a, #hi-score {
 }
 
 header, nav, #time {
-  color: rgb(2, 1, 1); 
+  color: var(--black-color)
 }
 
 main, section, #quiz {
@@ -45,7 +46,7 @@ div p {
 }
 
 
-.btn {
+div #btn {
   color: var(--background-color);
   background-color: var(--primary-color);
   border: none;
@@ -54,10 +55,11 @@ div p {
   border-radius: 10px;
 }
 
-.btn:hover {
+div #btn:hover {
   background-color: var(--secondary-color);
 }
 
+/* key is not working with an id */
 div, p, .key {
 margin-top:5px;
 }
