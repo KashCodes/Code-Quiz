@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-wrap" id="nav-wrap">
+      <div class="hi-score" id="hi-score">
+        <h3 class="hi-score-title" id="hi-score-title"> View high scores</h3>
+      </div>
+      <div>
+        <h3 id="time">Time: 0</h3>
+      </div>
+    </nav>
+  </header>
+
+  <main >
+    <section class="quiz" id="quiz">
+      <!-- Quiz Question & Quiz Answer Button Options Section -->
+      <div class="quiz-q" id="quiz-q">
+        <h1>
+          Coding Quiz Challenge
+        </h1>
+        <!-- Opening page info -->
+        <p>
+          Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+      </div>
+
+      <!-- Quiz Answer Button Section -->
+      <div class="answer" id="answer">
+        <ul class="opt" id="opt"></ul>
+        <button class="btn" id="btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Answer Key Section -->
+      <div class="key" id"key">
+        <p>Answer place holder</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
