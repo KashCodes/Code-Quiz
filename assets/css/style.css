@@ -13,7 +13,7 @@ margin:10px 2rem;
 font-family: 'Roboto', sans-serif;
 }
 
-header nav, #nav-wrap {
+header nav, .nav-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +28,7 @@ header, nav, #time {
   color: var(--black-color)
 }
 
-main, section, #quiz {
+main, section, .quiz-wrapper {
   display: flex;
   flex-direction: column;
   margin: 10px auto;
@@ -37,7 +37,7 @@ main, section, #quiz {
   height: auto;
 }
 
-#quiz-q {
+.start-quiz {
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ div p {
 }
 
 
-div #btn {
+div .btn {
   color: var(--background-color);
   background-color: var(--primary-color);
   border: none;
@@ -55,7 +55,7 @@ div #btn {
   border-radius: 10px;
 }
 
-div #btn:hover {
+div .btn:hover {
   background-color: var(--secondary-color);
 }
 

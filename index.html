@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Quiz</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
 
   <header>
-    <nav id="nav-wrap">
+    <nav class="nav-wrapper">
       <div id="hi-score">
         <h3 id="hi-score-title"><a href="#">View high scores</a></h3>
       </div>
@@ -23,9 +23,9 @@
   </header>
 
   <main >
-    <section id="quiz">
-      <!-- Quiz Question & Quiz Answer Button Options Section -->
-      <div id="quiz-q">
+    <section class="quiz-wrapper">
+      <!-- Quiz Question & Quiz Start Button (will disable this once quiz starts and use bottom section)-->
+      <div id="start-quiz" class="start-quiz" >
         <h1>
           Coding Quiz Challenge
         </h1>
@@ -36,18 +36,22 @@
         <button id="btn" class="btn">Start Quiz</button>
       </div>
 
-      <!-- Quiz Answer Button Section -->
-      <div id="answer">
-        <ul id="opt"></ul>
+      <!-- Quiz Questions after it starts Quiz Answer Buttons -->
+      <div id="questions">
+        <h2 id="quiz-question"></h2>
+        <div class="answer">
+          <ul id="options"></ul>
+        </div>
       </div>
 
       <!-- Quiz Answer Key Section -->
       <div id="key" class="key">
-        <p>Answer place holder!</p>
+        <p id="correct-wrong">Answer place holder!</p>
       </div>
     </section>
   </main>
 
+  <script src="./assets/js/questions.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

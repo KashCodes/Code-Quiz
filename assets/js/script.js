@@ -23,5 +23,24 @@ var countdown = function() {
       timerCountdown.textContent = "Time is up!";
   };
 };
+
+// function to start the quiz 
+
+// function to get the question
+
+// function to validate correct answer on click 
+
+// end quiz function (if timer runs out, hide questions, show end screen, final score)
+
+// save high score function
+
+// quiz end function (restart options display high scores)
+
+
+
+
+
+
+
 // timer starts at page load
 var timer = setInterval(countdown, 1000)
