@@ -1,4 +1,38 @@
+:root {
+  --primary-color: rgb(100, 6, 177);
+  --secondary-color: rgb(201, 73, 218);
+  --background-color: rgb(255, 255, 255);
+  --accent-color: rgb(163, 159, 159);
+}
+body {
+background: var(--background-color);
+box-sizing: border-box;
+margin:10px 2rem;
+font-family: 'Roboto', sans-serif;
+}
+header nav, #nav-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header, nav, #hi-score {
+  color: var(--secondary-color);
+}
+header, nav, #time {
+  color: rgb(2, 1, 1); 
+}
+main, section, #quiz {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 700px;
+  min-width:375px;
+  height: auto;
+}
 
+quiz-q {
+  text-align: center;
+}
 
 
 
