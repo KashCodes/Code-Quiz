@@ -23,7 +23,12 @@ var feedbackKey = document.querySelector("#key");
 var answersEl = document.querySelector("#answers");
 var highscoreScreen = document.querySelector("#highscore")
 
+function pageLoad() {
+  //only show start page. Hide other content.
+  highscoreScreen.setAttribute("class", "hide");
+  quizScreen.setAttribute("class", "hide");
 
+}
 
 
 
@@ -93,6 +98,7 @@ function getQuestion() {
 
 function questionClick() {
   // check if guessed wrong
+  
   if (this.value !== questions[currentQuestionIndex].correct) {
     //penalize time
     time -= 10;
@@ -105,9 +111,18 @@ function questionClick() {
     timerCountdown.textContent = time;
 
     feedbackKey.textContent = "Wrong!";
-  } else {
+  } if (this.value == questions[currentQuestionIndex].correct) {
+    //Give extra time
+    time += 10;
+
+    if (time < 0) {
+      time = 0;
+    }
+
+    // display new time on page
+    timerCountdown.textContent = time;
     feedbackKey.textcontent = "Correct!";
-  }
+  };
 
   // flash right/wrong feedback on page
   feedbackKey.setAttribute("class", "key");
@@ -133,8 +148,7 @@ function quizEnd () {
   clearInterval(timer);
 
   //show end screen
-  var highscoreSection = document.querySelector('#highscore');
-  highscoreSection = setAttribute("class", "show");
+  highscoreScreen = setAttribute("class", "show");
 
   // show final score 
   var finalScore = document.querySelector("#final-score");
@@ -193,21 +207,5 @@ startQuizBtn.onclick = startQuiz;
 
 initials.onkeyup = checkForEnter;
 
-// function to validate correct answer on click 
 
-// end quiz function (if timer runs out, hide questions, show end screen, final score)
-
-// save high score function
-
-// quiz end function (restart options display high scores)
-
-
-// startQuiz.addEventListener("click", startQuiz)
-
-
-
-
-
-
-//getQuestion();
-// pageLoad();
+pageLoad();

@@ -45,12 +45,29 @@ div p {
   font-size: 1.2rem;
 }
 
-
-div .btn {
+div .startbtn {
   color: var(--background-color);
   background-color: var(--primary-color);
   border: none;
   padding: 5px 20px;
+  margin:10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+div .startbtn:hover {
+  background-color: var(--secondary-color);
+}
+
+
+div .btn {
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 5px 20px;
+  margin:10px;
   font-size: 1.2rem;
   border-radius: 10px;
 }
@@ -79,3 +96,10 @@ border-top: 1px solid var(--accent-color);
   display: block;
 }
 
+.vishidden {
+  visibility: hidden;
+}
+
+.visdisplay {
+  visibility: display;
+}
