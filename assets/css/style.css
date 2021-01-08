@@ -19,12 +19,12 @@ header nav, .nav-wrapper {
   justify-content: space-between;
 }
 
-header, nav, a, #hi-score {
+header, nav, a, .hi-score {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-header, nav, #time {
+header, nav, .time {
   color: var(--black-color)
 }
 
@@ -71,5 +71,11 @@ font-size: 1.5rem;
 border-top: 1px solid var(--accent-color);
 }
 
+.hide {
+  display: none;
+}
 
+.show {
+  display: block;
+}
 
