@@ -28,6 +28,10 @@ function pageLoad() {
   highscoreScreen.setAttribute("class", "hide");
   quizScreen.setAttribute("class", "hide");
 
+  if (startQuiz == true){
+    
+  }
+
 }
 
 
