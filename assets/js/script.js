@@ -154,7 +154,7 @@ function questionClick() {
 function quizEnd () {
   // stop timer
   clearInterval(timer);
-debugger
+
   //show end screen
   highscoreScreen.setAttribute("class", "show");
 
@@ -188,9 +188,7 @@ function saveHighscore () {
    highscores.push(newScore);
    window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-   //redirect to display screen
-   scoreDisplay.setAttribute("class", "show");
-   highscoreScreen.setAttribute("class", "hide");
+   
   }
   printHighscores();
 }
@@ -202,6 +200,11 @@ function checkForEnter(event) {
 }
 
 function printHighscores() {
+  //redirect to display screen
+  titleScreen.setAttribute("class", "hide");
+  scoreDisplay.setAttribute("class", "show");
+  highscoreScreen.setAttribute("class", "hide");
+
   // either get scores from localstorage or set to empty array
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
