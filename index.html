@@ -14,7 +14,7 @@
   <header>
     <nav class="nav-wrapper">
       <div class="hi-score">
-        <h3 class="hi-score-title"><a href="#">View high scores</a></h3>
+        <h3 id="view-highscores" class="hi-score-title"><a href="#">View high scores</a></h3>
       </div>
       <div>
         <h3 class="time">Time: <span id="time">0</span></h3>
@@ -57,10 +57,21 @@
         <h3>Your final score is <span id="final-score">0</span></h3>
         <label for="initials-area">Enter initials:</label>
         <input type="text" name="initials-area" maxlength="4" id="initials">
-        <button id="initials-submit-button" type="submit">Submit</button>
+        <button id="initials-submit-button" type="submit" class="btn">Submit</button>
       </div>
 
-      
+      <!-- Highscore Display Screen -->
+      <div id="highscore-display">
+        <div id="scores">
+          <h2>Highscores:</h2>
+          <ol id="display-scores"></ol>
+          <a href="./index.html"><button id="return-btn" class="startbtn">Play Again</button></a>
+          <button id="clear-btn" class="startbtn">Clear Highscores</button>
+        </div>
+      </div>
+
+
+
     </section>
   </main>
 
