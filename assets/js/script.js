@@ -24,6 +24,7 @@ var answersEl = document.querySelector("#answers");
 var highscoreScreen = document.querySelector("#highscore")
 var scoreDisplay = document.querySelector("#highscore-display")
 var hideHighScoresLink = document.querySelector("#view-highscores")
+var hideTime = document.querySelector(".time")
 
 
 
@@ -210,6 +211,7 @@ function printHighscores() {
   scoreDisplay.setAttribute("class", "show");
   highscoreScreen.setAttribute("class", "hide");
   hideHighScoresLink.setAttribute("class", "hide");
+  hideTime.setAttribute("class", "hide");
 
   // either get scores from localstorage or set to empty array
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
