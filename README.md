@@ -1,43 +1,24 @@
-# Code-Quiz
+# Code Quiz 
+---
 
+## Code Quiz Rules:
 
-questions:
-Arrays in JavaScript can be used to store _____.
-1. numbers and strings
-2. other arrays
-3. booleans
-4. all of the above
+Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds! Correct answers will increate your score/time by 10 seconds!
 
-String Values must be enclosed within ____ when being assigned to variables.
-1. commas
-2. curly brackets
-3. quotes
-4. parenthesis
+After the quiz is completed you will have the option save your intials and score to the ranking page. You will be able to view all the High Scores after you save your score. You can also access all the scores from the link in the upper left-hand corner.  
 
-The condition in an if/else statement is enclosed with ____.
-1. quotes
-2. curly brackets
-3. parenthesis
-4. square brackets
+Good luck!
 
-Commonly used data types DO NOT include:
-1. strings
-2. booleans
-3. alerts
-4. numbers
+---
 
-A very useful tool for users during development and debugging for printing content to the debugger is:
-1. Javascript
-2. terminal/bash
-3. for loops
-4. console log
+### Github Repository
 
-All Done! <----header size.
-Your final score it "their score".
-Enter initials: form input box with Submit buttong to the right
-high score
+> https://github.com/KashCodes/Code-Quiz
 
-container w/"player initials + time remaining(score)"
-Two buttons.
-Go back with Clear high scores right next to it. hover event(from main color purple to pink)
-***View high scores and timer are gone on High Score screen***
+### Github Live Site
+
+> https://kashcodes.github.io/Code-Quiz/
+
+---
+
+![Code Quiz Screenshot](/screen-shot.PNG "Screenshot")
