@@ -21,4 +21,4 @@ Good luck!
 
 ---
 
-![Code Quiz Screenshot](/screen-shot.PNG "Screenshot")
+![Code Quiz Screenshot](assets/images/screen-shot.PNG "Screenshot")
